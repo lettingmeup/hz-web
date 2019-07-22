@@ -1,0 +1,131 @@
+.ContactUs{
+  width: 100%;
+  font-family: '微软雅黑';
+  line-height: 1.42857143;
+  color: #333;
+}
+/*标题样式*/
+#head{
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  color: #FFFF00;
+}
+#head .container{
+  width: 98%;
+  position: relative;
+  height: 80px;
+}
+.logo{
+  height: 79px;
+  margin-left: 10px;
+  border-radius:5px;
+}
+.list {
+  line-height: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.list ul li{
+  float: left;
+  margin: 0 15px;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.list ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.list li{
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.list li:hover .line{
+  bottom: 17px;
+  background-color: white;
+}
+.hr{
+  color: white;
+  font-size: 17px;
+}
+.list li:hover .hr{
+  color: red;
+}
+
+.line{
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius:5px;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+
+/*内容区样式*/
+#contact{
+  width: 100%;
+  position: relative;
+  background-size: 100% 100%;
+}
+
+#contact .data .group .en{
+  text-align: center;
+  font-size: 60px;
+  color: #d9d9d9;
+  font-weight: bold;
+  padding-top: 100px;
+}
+#contact .data .group .cn{
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+}
+#contact .data .group .tips{
+  text-align: center;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 40px;
+  line-height: 40px;
+}
+#contact .data .group .zixun{
+  text-align: center;
+  margin: 20px 0;
+}
+#contact .data .group .zixun img {
+  margin: 0 20px;
+}
+/*弹出二维码样式*/
+#contact .data .group .img{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top:35%;
+}
+#contact .data .group .img span{
+  position: relative;
+ text-align: center;
+}
+#contact .data .group .img .icon{
+  position: absolute;
+  right: 3px;
+}
+#contact .data .group .img img{
+  width: 250px;
+  height: 250px;
+  z-index: 10000;
+}
+
+
+
