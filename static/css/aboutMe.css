@@ -1,0 +1,218 @@
+.index{
+  overflow-y:scroll;
+}
+#head{
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  color: #FFFF00;
+}
+#head .container{
+  width: 98%;
+  position: relative;
+  height: 80px;
+}
+.logo{
+  height: 80px;
+  margin-left: 10px;
+  border-radius:5px;
+}
+.list {
+  line-height: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.list ul li{
+  float: left;
+  margin: 0 15px;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.list ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.list li{
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.list li:hover .line{
+  bottom: 17px;
+  background-color: white;
+}
+.hr{
+  color: white;
+  font-size: 17px;
+}
+.list li:hover .hr{
+  color: red;
+}
+
+.line{
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius:5px;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+.body{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.icon-box{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  height: 20px;
+  animation:mymove 1000ms infinite;
+}
+
+@keyframes mymove{
+  from {bottom:20px;}
+  to {bottom:10px;}
+}
+.tips{
+  position: absolute;
+  left: 0;
+  top: 36%;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.t1{
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 20px;
+  color: #FFFFFF;
+}
+.t2{
+  text-align: center;
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 60px;
+  margin: 20px 0;
+}
+.t3{
+  text-align: center;
+  color: #FFFFFF;
+}
+ .t3 span {
+  line-height: 28px;
+  border: solid 1px #DDDDDD;
+  display: inline-block;
+  padding: 0 20px;
+   background: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+.bo{
+  position: relative;
+  height: 760px;
+  width: 100%;
+  background-size: 100%;
+}
+.com-detail{
+  position: absolute;
+  width: 700px;
+  padding: 40px 40px 40px 40px;
+  height: 600px;
+  left: 100px;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.com-t1{
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.com-t2{
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.com-t3{
+  padding-top: 10px;
+  color: #FFFFFF;
+}
+.img-box{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content:center;
+}
+.im1{
+  border-radius:50%;
+  margin: 40px 10px 10px 10px;
+  height: 300px;
+  width: 300px;
+}
+.im2{
+  border-radius:50%;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+}
+.im3{
+  border-radius:50%;
+  margin: 40px 10px 10px 10px;
+  height: 300px;
+  width: 300px;
+}
+.im4{
+  border-radius:50%;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+
+}
+.po-t1{
+  padding-top: 50px;
+  padding-left: 100px;
+  font-size: 40px;
+  color: #c8c8c8;
+}
+.po-t2{
+  padding-left: 100px;
+  font-size: 32px;
+  color: #8b8b8c;
+  font-family: "微软雅黑";
+  font-weight: bold;
+}
+.honor{
+  width: 100%;
+}
+.h-title{
+  height: 120px;
+  width: 100%;
+}
+.h-t-1{
+  text-align: center;
+  font-size: 40px;
+  color: #c8c8c8;
+}
+.h-t-2{
+  text-align: center;
+  font-size: 32px;
+  color: #8b8b8c;
+  font-family: "微软雅黑";
+  font-weight: bold;
+}
