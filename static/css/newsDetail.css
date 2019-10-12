@@ -1,0 +1,103 @@
+.body{
+  width: 100%;
+  overflow-y:scroll;
+}
+#head{
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  color: #FFFF00;
+}
+#head .container{
+  width: 98%;
+  position: relative;
+  height: 80px;
+}
+.logo{
+  height: 80px;
+  margin-left: 10px;
+  border-radius:5px;
+}
+.list {
+  line-height: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.list ul li{
+  float: left;
+  margin: 0 15px;
+  font-size: 13px;
+  transition: all 0.3s;
+}
+.list ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.list li{
+  position: relative;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.list li:hover .line{
+  bottom: 17px;
+  background-color: white;
+}
+.hr{
+  color: white;
+  font-size: 17px;
+}
+.list li:hover .hr{
+  color: red;
+}
+
+.line{
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius:5px;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background: rgba(0, 0, 0, 0);
+  transition: all 0.3s;
+}
+.news-detail{
+  text-align: center;
+  width: 100%;
+  padding:100px 0 20px 0px;
+}
+.de-line{
+  border:1px dashed black;
+}
+.count{
+  padding-top: 20px;
+  width: 100%;
+  padding: 40px 100px 0 100px;
+}
+.count p{
+  padding-top: 10px;
+}
+.count img{
+  padding-top: 10px;
+  height: 50%;
+  width: 50%;
+}
+@media screen and (max-width:800px){
+  .list{
+    display: none;
+  }
+  .count{
+    padding: 40px 20px 0 20px;
+  }
+  .count img{
+    width: 95%;
+  }
+}
