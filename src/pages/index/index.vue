@@ -108,7 +108,8 @@
       <div style="width: 100%;height:100%;">
         <div class="page5-det">
            <ul class="page5-ul">
-             <li  class="page5-li" v-for="item in systemList" v-bind:style="{backgroundImage:'url(' + item.backImg + ')'}">
+             <li  class="page5-li" v-for="item in systemList" ><!--v-bind:style="{backgroundImage:'url('+ item.backImg+')'}"-->
+               <img  style="width: 100%;height: 100%" :src="item.backImg">
                <div class="page5-data">
                    <div class="page5-icon">
                      <img :src="item.icon"/>
@@ -367,10 +368,11 @@
       }
     },
     created(){
+        this.getSystem();
       this.getScollImg();
       this.getIndexData();
       this.getBlock();
-      this.getSystem();
+
       this.getNews();
       this.getHonor();
     },
@@ -470,6 +472,7 @@
         var url = vm.url+"/hhjx/index/getIndexSystem.do"
         this.$axios.post(url).then(function (res) {
            vm.systemList = res.data.sysBO;
+           console.log(vm.systemList)
         }).catch(function (error) {
           console.log(error)
         })

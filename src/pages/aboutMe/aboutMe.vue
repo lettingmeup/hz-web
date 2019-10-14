@@ -33,22 +33,24 @@
       <div class="po-t1">{{po1.engTitle}}</div>
       <div class="po-t2">{{po1.chaTitle}}</div>
       <div class="img-box">
-        <div style="position: relative;padding-right: 50px;float:left" v-for="item in po1.imgList">
-          <span class="date">2018年</span>
+        <div style="padding-right: 50px;float:left;padding-left: 50px;position: relative;" v-for="item in po1.imgList">
+          <span class="date">{{item.time}}</span>
           <div class="im1" v-bind:style="{backgroundImage:'url(' + item.img + ')'}"></div>
-          <div class="po-tit">11月 华海教育集团前身华海教育咨询有限公司在天津市城市春天1518挂牌成立</div>
+          <div class="po-tit">{{item.detail}}</div>
         </div>
       </div>
     </div>
+
+
     <div class="honor">
       <div class="h-title">
            <div class="h-t-1">{{honor.engTitle}}</div>
            <div class="h-t-2">{{honor.chaTitle}}</div>
       </div>
-      <div>
+      <div style="height: 50px;width: 100%">
 
       </div>
-      <div style="height: 400px;width: 100%" class="swiper-container">
+      <div style="height: 500px;width: 100%;padding-top: 130px" class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"v-for="item in imgList">
             <div style="height: 100%;width: 100%">
@@ -60,6 +62,7 @@
         <!-- 如果需要滚动条 -->
         <div class="swiper-scrollbar"></div>
       </div>
+      <div style="height: 100px;width: 100%"></div>
     </div>
   </div>
 </template>

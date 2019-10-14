@@ -71,10 +71,9 @@
 .date{
   position: absolute;
   left: -50px;
-  top: -60px;
+  text-align: center;
   width: 108px;
   height: 108px;
-  text-align: center;
   line-height: 108px;
   color: #FFFFFF;
   background: #dab96b;
@@ -169,11 +168,11 @@
   color: #FFFFFF;
 }
 .img-box{
+
   width: 100%;
   padding-top: 100px;
   padding-left: 100px;
-  display: flex;
-  justify-content:center;
+  float: left;
 }
 .po-tit{
   font-size: 13px;
@@ -183,12 +182,13 @@
   margin: 10px 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  width: 200px;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
 .im1{
   border-radius:50%;
-  margin: 40px 10px 10px 10px;
+  margin: 30px 10px 10px 10px;
   height: 220px;
   width: 220px;
 }
@@ -206,7 +206,9 @@
   font-weight: bold;
 }
 .honor{
+  padding-top: 20px;
   width: 100%;
+  height: 600px;
 }
 .h-title{
   height: 120px;

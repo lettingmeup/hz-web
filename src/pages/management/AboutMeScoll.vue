@@ -6,7 +6,7 @@
       <Button  style="position: absolute;top: 100px;right: 200px" @click="addImg">上传轮播图</Button>
     </div>
     <div v-show="upShow"style="text-align:center;height: 500px;width: 700px;background:#b3d4fc;border-color:black;border:1px;position: absolute;top: 30px;left: 200px" >
-      <img :src="add.img"/>
+      <img style="width: 80px;height: 100px" :src="add.img"/>
       <Upload
         :on-success="getBack"
         action="http://49.232.53.207/hhjx/index/p6Img.do">

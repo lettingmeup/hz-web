@@ -5,7 +5,7 @@
       <Table height="500" border :columns="columnde"  :data="tablede"></Table>
     </div>
     <div v-show="upShow"style="text-align:center;height: 500px;width: 700px;background:#b3d4fc;border-color:black;border:1px;position: fixed;z-index:100;top: 30px;left: 200px" >
-      <img :src="upData.img"/>
+      <img style="height: 300px;width: 260px;" :src="upData.img"/>
       <Upload
         :on-success="getBack"
         action="http://www.hhjxedu.com/hhjx/index/p6Img.do">
